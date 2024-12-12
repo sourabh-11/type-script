@@ -100,3 +100,63 @@ class  bottle{
 let a = new bottle("lala",12)
 console.log(a.name);
 */
+
+
+// this in tsc
+/** 
+class abcd{
+   name ="lala";
+   changename()
+   {
+      this.name = "lala1"
+   }
+}
+   */
+
+/** 
+class bottleMake{
+   constructor(public  name:string)
+   {}
+      changename(){
+        this.name  ="hello";
+      }
+      
+
+   
+}
+let a = new bottleMake("lala")
+
+console.log();
+*/
+
+
+// staatic  and abstraion in tsc
+/**  
+class control{
+  static version  = 34;
+  static data()
+  {
+   console.log("ata");
+   
+  }
+
+}
+console.log(control.version);
+
+abstract class animal 
+{
+   abstract makesoud() : void;
+   move(): void{
+      console.log("hello");
+      
+   }
+}
+class Dog extends animal {
+   makesoud(): void {
+       console.log("Bark! Bark!");
+   }
+}
+const dog = new Dog();
+console.log(dog.makesoud());
+
+// */
